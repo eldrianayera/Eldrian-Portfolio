@@ -48,7 +48,7 @@ export const SkillsSection = () => {
           {filteredSkills.map((skill, key) => {
             return (
               <div
-                className="card-hover flex flex-col bg-primary/30 gap-5 p-4 rounded-lg max-w-100"
+                className="card-hover flex flex-col bg-primary/30 gap-5 p-4 rounded-lg w-full max-w-100 mx-auto"
                 key={key}
               >
                 <h3 className="self-start font-bold">{skill.name}</h3>
