@@ -1,6 +1,18 @@
 import { ArrowBigDown, ArrowBigDownDash, ArrowBigDownIcon } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export const HeroSection = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <section
       className="relative min-h-screen flex flex-col justify-center items-center px-4"
@@ -32,10 +44,15 @@ export const HeroSection = () => {
         </div>
       </div>
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-sm mb-2">Scroll</span>
-        <span>
-          <ArrowBigDown className="text-primary h-5 w-5" />
-        </span>
+        {isScrolled ? (
+          ""
+        ) : (
+          <>
+            {" "}
+            <span className="text-sm mb-2">Scroll</span>{" "}
+            <ArrowBigDown className="text-primary h-5 w-5" />{" "}
+          </>
+        )}
       </div>
     </section>
   );
