@@ -3,14 +3,19 @@ import { mySkills } from "../lib/mySkills";
 import { cn } from "../lib/utils";
 
 export const SkillsSection = () => {
-  const [skillsCategory, setSkillsCategory] = useState("All");
+  const [activeCategory, setActiveCategory] = useState("All");
 
   const categories = [...new Set(mySkills.map((skill) => skill.category))];
   categories.unshift("All");
 
   const handleCategory = (category) => {
-    setSkillsCategory(category);
+    setActiveCategory(category);
   };
+
+  const filteredSkills =
+    activeCategory === "All"
+      ? mySkills
+      : mySkills.filter((skill) => skill.category === activeCategory);
 
   return (
     <section
@@ -22,13 +27,14 @@ export const SkillsSection = () => {
           My <span className="text-primary">Skills</span>
         </h2>
         <div className="justify-center hidden md:flex gap-3 mb-12">
-          {categories.map((category) => {
+          {categories.map((category, key) => {
             return (
               <button
+                key={key}
                 onClick={() => handleCategory(category)}
                 className={cn(
                   "cosmic-button scale-80",
-                  category === skillsCategory
+                  category === activeCategory
                     ? "scale-105"
                     : "bg-primary/20 hover:scale-70"
                 )}
@@ -38,14 +44,24 @@ export const SkillsSection = () => {
             );
           })}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-          <div className="card-hover flex flex-col bg-primary/30 gap-5 p-4 rounded-lg ">
-            <h3 className="self-start font-bold">Javascript</h3>
-            <div className="self-center bg-black h-2 w-full rounded-md">
-              <div className="w-70/100 h-full bg-primary rounded-md "></div>
-            </div>
-            <p className="self-end">20%</p>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {filteredSkills.map((skill, key) => {
+            return (
+              <div
+                className="card-hover flex flex-col bg-primary/30 gap-5 p-4 rounded-lg max-w-100"
+                key={key}
+              >
+                <h3 className="self-start font-bold">{skill.name}</h3>
+                <div className="self-center bg-black h-2 w-full rounded-md">
+                  <div
+                    className="h-full bg-primary rounded-md"
+                    style={{ width: `${skill.level}%` }}
+                  ></div>
+                </div>
+                <p className="self-end">{skill.level}%</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

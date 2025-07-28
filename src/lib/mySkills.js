@@ -8,6 +8,7 @@ export const mySkills = [
   { name: "Tailwind CSS", level: 90, category: "Frontend" },
   { name: "Node.js", level: 80, category: "Frontend" },
   { name: "PostgresSQL", level: 95, category: "Backend" },
+  { name: "Python", level: 95, category: "Backend" },
   { name: "Git/GitHub", level: 90, category: "Tools" },
   { name: "VS Code", level: 95, category: "Tools" },
   { name: "Express", level: 75, category: "Backend" },
@@ -18,4 +19,11 @@ export const mySkills = [
 
 const categories = [...new Set(mySkills.map((skill) => skill.category))];
 categories.unshift("All");
-console.log(categories);
+
+const skillsCategory = "Frontend";
+
+const calculateSkills = () => {
+  const skillsInCategory = mySkills.filter(
+    (skill) => skill.category === skillsCategory
+  );
+};
