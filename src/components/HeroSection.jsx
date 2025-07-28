@@ -2,7 +2,10 @@ import { ArrowBigDown, ArrowBigDownDash, ArrowBigDownIcon } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center px-4">
+    <section
+      className="relative min-h-screen flex flex-col justify-center items-center px-4"
+      id="hero"
+    >
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
