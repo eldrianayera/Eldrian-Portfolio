@@ -79,7 +79,7 @@ export const ContactSection = () => {
                       id="name"
                       name="name"
                       placeholder="John Doe..."
-                      className="bg-black rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
+                      className="bg-backgorund rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
                     />
                   </div>
                   <div className="flex flex-col items-center gap-2 w-full mb-5">
@@ -89,7 +89,7 @@ export const ContactSection = () => {
                       name="email"
                       type="email"
                       placeholder="johndoe@gmail.com"
-                      className=" bg-black rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
+                      className=" bg-background rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
                     />
                   </div>
                   <div className="flex flex-col items-center gap-2 w-full mb-5">
@@ -99,7 +99,7 @@ export const ContactSection = () => {
                       name="message"
                       type="text"
                       placeholder="Hello , I'd like to talk about..."
-                      className="resize-none bg-black rounded-md border-2 py-1 px-2 w-full h-20 focus:outline-hidden focus:ring-2 focus:ring-primary"
+                      className="resize-none bg-background rounded-md border-2 py-1 px-2 w-full h-20 focus:outline-hidden focus:ring-2 focus:ring-primary"
                     />
                   </div>
                 </form>
