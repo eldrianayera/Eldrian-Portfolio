@@ -42,7 +42,7 @@ export const ProjectsSection = () => {
                   <div className="flex gap-2 mb-4 flex-wrap">
                     {project.tools.map((tool) => {
                       return (
-                        <div className="text-xs px-2 py-1 rounded-full font-medium ">
+                        <div className="text-xs px-2 py-1 rounded-full font-medium bg-primary/40">
                           {tool}
                         </div>
                       );
