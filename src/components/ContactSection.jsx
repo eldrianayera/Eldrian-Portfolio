@@ -1,4 +1,5 @@
 import {
+  HandHelping,
   Instagram,
   LocationEdit,
   Mail,
@@ -7,8 +8,25 @@ import {
   Send,
 } from "lucide-react";
 import { cn } from "../lib/utils";
+import { useState } from "react";
 
 export const ContactSection = () => {
+  const [isSending, setIsSending] = useState(false);
+  const [inputName, setInputName] = useState("");
+  const [inputEmail, setInputEmail] = useState("");
+  const [inputMessage, setInputMessage] = useState("");
+
+  const handleSending = () => {
+    setIsSending(true);
+
+    setTimeout(() => {
+      setIsSending(false);
+      setInputEmail("");
+      setInputMessage("");
+      setInputName("");
+    }, 1500);
+  };
+
   return (
     <section className="min-h-screen py-24 px-8 relative" id="contact">
       <div className="container mx-auto max-w-5xl">
@@ -79,7 +97,11 @@ export const ContactSection = () => {
                       id="name"
                       name="name"
                       placeholder="John Doe..."
+                      value={inputName}
                       className="bg-backgorund rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
+                      onChange={(event) => {
+                        setInputName(event.target.value);
+                      }}
                     />
                   </div>
                   <div className="flex flex-col items-center gap-2 w-full mb-5">
@@ -89,7 +111,11 @@ export const ContactSection = () => {
                       name="email"
                       type="email"
                       placeholder="johndoe@gmail.com"
+                      value={inputEmail}
                       className=" bg-background rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
+                      onChange={(event) => {
+                        setInputEmail(event.target.value);
+                      }}
                     />
                   </div>
                   <div className="flex flex-col items-center gap-2 w-full mb-5">
@@ -99,16 +125,22 @@ export const ContactSection = () => {
                       name="message"
                       type="text"
                       placeholder="Hello , I'd like to talk about..."
+                      value={inputMessage}
                       className="resize-none bg-background rounded-md border-2 py-1 px-2 w-full h-20 focus:outline-hidden focus:ring-2 focus:ring-primary"
+                      onChange={(event) => {
+                        setInputMessage(event.target.value);
+                      }}
                     />
                   </div>
                 </form>
                 <button
+                  onClick={handleSending}
                   className={cn(
                     "cosmic-button w-full flex justify-center gap-2"
                   )}
                 >
-                  Send Message <Send />
+                  {isSending ? "Sending..." : "Send Message"}
+                  <Send />
                 </button>
               </div>
             </div>

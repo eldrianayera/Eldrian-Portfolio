@@ -40,9 +40,12 @@ export const ProjectsSection = () => {
 
                 <div className="p-6">
                   <div className="flex gap-2 mb-4 flex-wrap">
-                    {project.tools.map((tool) => {
+                    {project.tools.map((tool, key) => {
                       return (
-                        <div className="text-xs px-2 py-1 rounded-full font-medium bg-primary/40">
+                        <div
+                          key={key}
+                          className="text-xs px-2 py-1 rounded-full font-medium bg-primary/40"
+                        >
                           {tool}
                         </div>
                       );
