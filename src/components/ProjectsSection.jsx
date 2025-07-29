@@ -27,7 +27,7 @@ export const ProjectsSection = () => {
             return (
               <div
                 key={key}
-                className="rounded-lg overflow-hidden mx-auto card-hover shadow-xs group"
+                className="rounded-lg overflow-hidden mx-auto card-hover shadow-xs group bg-card"
               >
                 <div className="h-48 overflow-hidden">
                   {" "}

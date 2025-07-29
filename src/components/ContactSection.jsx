@@ -68,7 +68,7 @@ export const ContactSection = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center gap-4 border-2 p-9 rounded-2xl">
+            <div className="flex flex-col items-center gap-4 border-2 p-9 rounded-2xl bg-card">
               <div className="flex flex-col items-center w-full ">
                 <h3 className="text-xl font-bold mb-5">Send a Message</h3>
                 <form action="" className="w-full mb-5">
@@ -79,7 +79,7 @@ export const ContactSection = () => {
                       id="name"
                       name="name"
                       placeholder="John Doe..."
-                      className=" bg-card rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
+                      className="bg-black rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
                     />
                   </div>
                   <div className="flex flex-col items-center gap-2 w-full mb-5">
@@ -89,7 +89,7 @@ export const ContactSection = () => {
                       name="email"
                       type="email"
                       placeholder="johndoe@gmail.com"
-                      className=" bg-card rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
+                      className=" bg-black rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
                     />
                   </div>
                   <div className="flex flex-col items-center gap-2 w-full mb-5">
@@ -99,7 +99,7 @@ export const ContactSection = () => {
                       name="message"
                       type="text"
                       placeholder="Hello , I'd like to talk about..."
-                      className="resize-none bg-card rounded-md border-2 py-1 px-2 w-full h-20 focus:outline-hidden focus:ring-2 focus:ring-primary"
+                      className="resize-none bg-black rounded-md border-2 py-1 px-2 w-full h-20 focus:outline-hidden focus:ring-2 focus:ring-primary"
                     />
                   </div>
                 </form>
