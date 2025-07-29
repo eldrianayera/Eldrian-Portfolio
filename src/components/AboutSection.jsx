@@ -1,4 +1,15 @@
-import { Briefcase, Cpu, Dribbble, Handshake } from "lucide-react";
+import {
+  Brain,
+  BrainCircuit,
+  BrainCog,
+  BrainIcon,
+  Briefcase,
+  Code,
+  Code2Icon,
+  Cpu,
+  Dribbble,
+  Handshake,
+} from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -12,22 +23,23 @@ export const AboutSection = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ">
           <div className="flex flex-col items-center justify-center animate-fade-in opacity-0 space-y-6">
-            <h3 className="text-2xl text-primary font-semibold ">
+            <h3 className="text-2xl font-semibold text-glow">
               Passionate Web Developer
             </h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-              velit voluptate atque tempore fugiat dolorum ratione eaque quis
-              amet, recusandae, animi cumque repellat praesentium libero
-              nesciunt corrupti incidunt nam quam?
+              I'm a dedicated and creative web developer with a passion for
+              building modern, responsive, and user-friendly websites. Whether
+              it's crafting elegant UIs or optimizing backend functionality, I
+              love turning ideas into digital experiences that work beautifully
+              across all devices.
             </p>
 
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit.
+              With a strong foundation in HTML, CSS, JavaScript, React, and
+              TailwindCSS, I strive to deliver clean, efficient, and scalable
+              code in every project. I'm continuously learning and staying
+              up-to-date with the latest web technologies to bring innovative
+              solutions to life.
             </p>
             <div className="flex flex-col md:flex-row justify-center gap-4 pt-4">
               <a className="cosmic-button" href="#contact">
@@ -40,32 +52,32 @@ export const AboutSection = () => {
           </div>
           <div className="grid grid-cols-1 gap-6">
             <div className="flex items-start bg-primary/20 rounded-xl animate-fade-in-delay-2 opacity-0 card-hover p-6">
-              <Briefcase className="h-15 w-15 mr-5" />
+              <Code2Icon className="h-15 w-15 mr-5" />
               <div className="text-left">
-                <h4 className="text-xl ">Eldrian</h4>
+                <h4 className="text-xl ">Frontend Development</h4>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  dolorem dolores tempora
+                  Crafting responsive, user-friendly interfaces. My focus is on
+                  clean design, performance, and accessibility.
                 </p>
               </div>
             </div>
             <div className="flex items-start bg-primary/20 rounded-xl animate-fade-in-delay-2 opacity-0 card-hover p-6">
-              <Cpu className="h-15 w-15 mr-5" />
+              <BrainCircuit className="h-15 w-15 mr-5" />
               <div className="text-left">
-                <h4 className="text-xl ">Ayera</h4>
+                <h4 className="text-xl ">Problem Solving & Logic</h4>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  dolorem dolores tempora
+                  Love turning complex problems into simple, functional web
+                  solutions.
                 </p>
               </div>
             </div>
             <div className="flex items-start bg-primary/20 rounded-xl animate-fade-in-delay-2 opacity-0 card-hover p-6">
               <Handshake className="h-15 w-15 mr-5" />
               <div className="text-left">
-                <h4 className="text-xl ">Muljadi</h4>
+                <h4 className="text-xl ">Tools & Workflow</h4>
                 <p className="text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-                  dolorem dolores tempora
+                  Use Git, GitHub, VS Code, and Figma to stay efficient and
+                  organized.
                 </p>
               </div>
             </div>

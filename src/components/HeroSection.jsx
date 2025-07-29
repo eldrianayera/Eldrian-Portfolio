@@ -30,10 +30,11 @@ export const HeroSection = () => {
           </h1>
 
           <p className="opacity-0 animate-fade-in-delay-3 text-foreground text-lg md:text-xl max-2-2xl mx-auto ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            sed velit quo nulla ratione dolores corrupti incidunt eaque, quis
-            quisquam quasi facere enim dolor magni neque ipsum? Impedit, tempore
-            temporibus.
+            A passionate web developer focused on building clean, responsive,
+            and user-friendly websites using modern tools. I enjoy turning ideas
+            into functional, visually appealing digital experiences, and I'm
+            always eager to learn, solve problems, and bring creativity to every
+            project I work on.
           </p>
         </div>
 
