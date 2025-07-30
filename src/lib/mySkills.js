@@ -3,10 +3,11 @@ import { Key } from "lucide-react";
 export const mySkills = [
   { name: "HTML", level: 90, category: "Frontend" },
   { name: "CSS", level: 95, category: "Frontend" },
+  { name: "XML", level: 90, category: "Frontend" },
   { name: "Javascript", level: 80, category: "Frontend" },
   { name: "React", level: 80, category: "Frontend" },
   { name: "Tailwind CSS", level: 90, category: "Frontend" },
-  { name: "Node.js", level: 80, category: "Frontend" },
+  { name: "Node.js", level: 80, category: "Backend" },
   { name: "PostgresSQL", level: 95, category: "Backend" },
   { name: "Python", level: 95, category: "Backend" },
   { name: "Git/GitHub", level: 90, category: "Tools" },
