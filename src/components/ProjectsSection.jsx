@@ -3,6 +3,7 @@ import {
   GitBranchIcon,
   Github,
   GithubIcon,
+  Share2,
 } from "lucide-react";
 import { myProjects } from "../lib/myProjects";
 
@@ -34,7 +35,7 @@ export const ProjectsSection = () => {
                   <img
                     src={project.img}
                     alt={project.name}
-                    className="w-full h-full object-cover transition-transform duration-500 scale-80 group-hover:scale-100 rounded-t-lg"
+                    className="w-full h-full object-cover transition-transform duration-500 scale-100 group-hover:scale-107 rounded-t-lg"
                   />
                 </div>
 
@@ -53,10 +54,32 @@ export const ProjectsSection = () => {
                   </div>
                 </div>
 
-                <h2 className="font-bold text-xl mb-1">{project.name}</h2>
-                <p className="text-sm mb-4">{project.description}</p>
-                <div className="p-6 ">
-                  <a href={project.link}>{<Github />}</a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.link}
+                  className="font-bold text-xl mb-1"
+                >
+                  {project.name}
+                </a>
+                <p className="text-sm mb-4 px-7">{project.description}</p>
+                <div className="p-6 flex justify-between">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={project.github}
+                    className="w-10 h-10 rounded-full hover:bg-foreground flex items-center justify-center"
+                  >
+                    <Github className="w-6 h-6 text-foreground hover:text-background" />
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={project.link}
+                    className="w-10 h-10 rounded-full hover:bg-foreground flex items-center justify-center"
+                  >
+                    <Share2 className="w-6 h-6 text-foreground hover:text-background" />
+                  </a>
                 </div>
               </div>
             );

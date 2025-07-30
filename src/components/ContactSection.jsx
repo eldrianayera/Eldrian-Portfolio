@@ -98,7 +98,7 @@ export const ContactSection = () => {
                       name="name"
                       placeholder="John Doe..."
                       value={inputName}
-                      className="bg-backgorund rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
+                      className="bg-background rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
                       onChange={(event) => {
                         setInputName(event.target.value);
                       }}
@@ -112,7 +112,7 @@ export const ContactSection = () => {
                       type="email"
                       placeholder="johndoe@gmail.com"
                       value={inputEmail}
-                      className=" bg-background rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
+                      className="bg-background rounded-md border-2 py-1 px-2 w-full focus:outline-hidden focus:ring-2 focus:ring-primary"
                       onChange={(event) => {
                         setInputEmail(event.target.value);
                       }}
