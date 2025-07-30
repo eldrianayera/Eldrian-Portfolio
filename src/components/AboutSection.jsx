@@ -45,7 +45,7 @@ export const AboutSection = () => {
               <a className="cosmic-button" href="#contact">
                 Get in touch
               </a>
-              <a className="cosmic-button bg-primary/10" href="">
+              <a className="cosmic-button bg-pink-400/70" href="">
                 Download CV
               </a>
             </div>
