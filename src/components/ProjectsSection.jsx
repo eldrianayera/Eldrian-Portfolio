@@ -88,7 +88,10 @@ export const ProjectsSection = () => {
             );
           })}
         </div>
-        <a href="" className="flex gap-2 cosmic-button mt-10 animate-bounce">
+        <a
+          href="https://github.com/eldrianayera"
+          className="flex gap-2 cosmic-button mt-10 animate-bounce"
+        >
           Check My Github{" "}
           <span>
             <ArrowBigRightDash />

@@ -1,4 +1,4 @@
-import saasImg from "@/lib/images/saas.png";
+import saaswhiteImg from "@/lib/images/saaswhite.png";
 import boyfieImg from "@/lib/images/boyfie.png";
 import eldreeImg from "@/lib/images/eldree.png";
 import keeperImg from "@/lib/images/keeper.png";
@@ -8,7 +8,7 @@ export const myProjects = [
   {
     name: "SaaS Landing Page",
     tools: ["React", "Javascript", "TailwindCSS"],
-    img: saasImg,
+    img: saaswhiteImg,
     link: "https://saa-s-landing-page-eta.vercel.app/",
     github: "https://github.com/eldrianayera/SaaS-Landing-Page",
     description:
