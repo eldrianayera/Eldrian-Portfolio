@@ -1,5 +1,5 @@
 import saaswhiteImg from "@/lib/images/saaswhite.png";
-import boyfieImg from "@/lib/images/boyfie.png";
+import eldrimatchImg from "@/lib/images/eldrimatch.png";
 import eldreeImg from "@/lib/images/eldree.png";
 import keeperImg from "@/lib/images/keeper.png";
 import portfolioImg from "@/lib/images/portfolio.png";
@@ -32,5 +32,14 @@ export const myProjects = [
     github: "https://github.com/eldrianayera/Eldrian-Portfolio",
     description:
       "A social media platform backend built with Node.js to support user interactions and content sharing.",
+  },
+  {
+    name: "Dating App Landing Page",
+    tools: ["HTML", "CSS"],
+    img: eldrimatchImg,
+    link: "https://github.com/eldrianayera/EldriMatch-Landing-Page",
+    github: "https://github.com/eldrianayera/EldriMatch-Landing-Page",
+    description:
+      "A visually engaging and responsive landing page for a fictional dating app, built with HTML and CSS",
   },
 ];
