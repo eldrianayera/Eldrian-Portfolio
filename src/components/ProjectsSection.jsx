@@ -26,7 +26,7 @@ export const ProjectsSection = () => {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {myProjects.map((project, key) => {
             return (
-              <a
+              <div
                 target="_blank"
                 rel="noopener noreferrer"
                 href={project.link}
@@ -84,7 +84,7 @@ export const ProjectsSection = () => {
                     <Share2 className="w-6 h-6 text-foreground hover:text-background" />
                   </a>
                 </div>
-              </a>
+              </div>
             );
           })}
         </div>
