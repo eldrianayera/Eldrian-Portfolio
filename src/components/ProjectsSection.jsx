@@ -27,14 +27,11 @@ export const ProjectsSection = () => {
           {myProjects.map((project, key) => {
             return (
               <div
-                target="_blank"
-                rel="noopener noreferrer"
-                href={project.link}
                 key={key}
-                className="rounded-lg overflow-hidden mx-auto card-hover shadow-xs group bg-card"
+                className="rounded-lg overflow-hidden mx-auto card-hover shadow-xs group bg-card h-full flex flex-col"
               >
+                {/* Image */}
                 <div className="h-48 overflow-hidden">
-                  {" "}
                   <img
                     src={project.img}
                     alt={project.name}
@@ -42,47 +39,54 @@ export const ProjectsSection = () => {
                   />
                 </div>
 
-                <div className="p-6">
+                {/* Content */}
+                <div className="flex flex-col flex-grow p-6">
+                  {/* Tools */}
                   <div className="flex gap-2 mb-4 flex-wrap">
-                    {project.tools.map((tool, key) => {
-                      return (
-                        <div
-                          key={key}
-                          className="text-xs px-2 py-1 rounded-full font-medium bg-primary/40"
-                        >
-                          {tool}
-                        </div>
-                      );
-                    })}
+                    {project.tools.map((tool, idx) => (
+                      <div
+                        key={idx}
+                        className="text-xs px-2 py-1 rounded-full font-medium bg-primary/40"
+                      >
+                        {tool}
+                      </div>
+                    ))}
                   </div>
-                </div>
 
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={project.link}
-                  className="font-bold text-xl mb-1"
-                >
-                  {project.name}
-                </a>
-                <p className="text-sm mb-4 px-7">{project.description}</p>
-                <div className="p-6 flex justify-between">
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={project.github}
-                    className="w-10 h-10 rounded-full hover:bg-foreground flex items-center justify-center"
-                  >
-                    <Github className="w-6 h-6 text-foreground hover:text-background" />
-                  </a>
+                  {/* Name */}
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
                     href={project.link}
-                    className="w-10 h-10 rounded-full hover:bg-foreground flex items-center justify-center"
+                    className="font-bold text-xl m-2"
                   >
-                    <Share2 className="w-6 h-6 text-foreground hover:text-background" />
+                    {project.name}
                   </a>
+
+                  {/* Description */}
+                  <p className="text-sm mb-4 flex-grow m-3">
+                    {project.description}
+                  </p>
+
+                  {/* Bottom actions */}
+                  <div className="flex justify-between mt-auto pt-4 border-t border-border">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={project.github}
+                      className="w-10 h-10 rounded-full hover:bg-foreground flex items-center justify-center"
+                    >
+                      <Github className="w-6 h-6 text-foreground hover:text-background" />
+                    </a>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={project.link}
+                      className="w-10 h-10 rounded-full hover:bg-foreground flex items-center justify-center"
+                    >
+                      <Share2 className="w-6 h-6 text-foreground hover:text-background" />
+                    </a>
+                  </div>
                 </div>
               </div>
             );

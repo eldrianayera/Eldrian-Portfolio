@@ -13,7 +13,16 @@ export const myProjects = [
     link: "https://saa-s-landing-page-eta.vercel.app/",
     github: "https://github.com/eldrianayera/SaaS-Landing-Page",
     description:
-      "A responsive and Modern SaaS landing page designed to attract big companies.",
+      "A clean, modern SaaS landing page built with React and TailwindCSS. Designed for high conversion, it features responsive layouts, smooth animations, and a professional aesthetic to attract enterprise clients.",
+  },
+  {
+    name: "FitWear FullStack Catalogue",
+    tools: ["Node.js", "Express.js", "React", "PostgresSQL", "Supabase"],
+    img: fitwearImg,
+    link: "https://fitwear-frontend.vercel.app/",
+    github: "https://github.com/eldrianayera/FitWear-Catalogue",
+    description:
+      "A full-stack e-commerce catalogue for sports apparel with a React frontend, Express.js REST API backend, and PostgreSQL database on Supabase. Users can browse, search, and filter products with a responsive, performance‑optimized UI.",
   },
   {
     name: "Portfolio Page",
@@ -21,9 +30,8 @@ export const myProjects = [
     img: portfolioImg,
     link: "https://eldrian-muljadi-portfolio.vercel.app/",
     github: "https://github.com/eldrianayera/Eldrian-Portfolio",
-
     description:
-      "A responsive and visually appealing landing page designed to attract users to a dating app.",
+      "A personal portfolio website showcasing projects, skills, and experience. Built with React and TailwindCSS for a responsive, modern, and professional presentation.",
   },
   {
     name: "Eldree Social Media",
@@ -32,7 +40,7 @@ export const myProjects = [
     link: "https://github.com/eldrianayera/Eldrian-Portfolio",
     github: "https://github.com/eldrianayera/Eldrian-Portfolio",
     description:
-      "A social media platform backend built with Node.js to support user interactions and content sharing.",
+      "A backend service for a social media platform, built with Node.js and Express.js. Provides core features like user authentication, content creation, and interaction endpoints for scalable deployment.",
   },
   {
     name: "Dating App Landing Page",
@@ -41,22 +49,6 @@ export const myProjects = [
     link: "https://github.com/eldrianayera/EldriMatch-Landing-Page",
     github: "https://github.com/eldrianayera/EldriMatch-Landing-Page",
     description:
-      "A visually engaging and responsive landing page for a fictional dating app, built with HTML and CSS",
-  },
-  {
-    name: "FitWear FullStack Catalogue",
-    tools: [
-      "Node.js",
-      "Express.js",
-      "Javascript",
-      "React",
-      "PostgresSQL",
-      "Supabase",
-    ],
-    img: fitwearImg,
-    link: "https://vercel.com/eldrian-ayera-muljadis-projects/fitwear-frontend",
-    github: "https://github.com/eldrianayera/FitWear-Catalogue",
-    description:
-      "A full-stack e-commerce product catalogue for sports apparel, featuring a dynamic React frontend, Express.js REST API backend, and PostgreSQL database hosted on Supabase. The app allows users to browse, search, and filter products with a clean, responsive UI. Integrated API endpoints serve real product data, and the site is fully deployed with a live backend and frontend for a seamless portfolio showcase.",
+      "A visually appealing and mobile‑friendly landing page for a fictional dating app. Built with semantic HTML and modern CSS for a clean, engaging user experience.",
   },
 ];
