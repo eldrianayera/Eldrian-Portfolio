@@ -3,6 +3,7 @@ import eldrimatchImg from "@/lib/images/eldrimatch.png";
 import eldreeImg from "@/lib/images/eldree.png";
 import keeperImg from "@/lib/images/keeper.png";
 import portfolioImg from "@/lib/images/portfolio.png";
+import fitwearImg from "@/lib/images/fitwear.png";
 
 export const myProjects = [
   {
@@ -41,5 +42,21 @@ export const myProjects = [
     github: "https://github.com/eldrianayera/EldriMatch-Landing-Page",
     description:
       "A visually engaging and responsive landing page for a fictional dating app, built with HTML and CSS",
+  },
+  {
+    name: "FitWear FullStack Catalogue",
+    tools: [
+      "Node.js",
+      "Express.js",
+      "Javascript",
+      "React",
+      "PostgresSQL",
+      "Supabase",
+    ],
+    img: fitwearImg,
+    link: "https://vercel.com/eldrian-ayera-muljadis-projects/fitwear-frontend",
+    github: "https://github.com/eldrianayera/FitWear-Catalogue",
+    description:
+      "A full-stack e-commerce product catalogue for sports apparel, featuring a dynamic React frontend, Express.js REST API backend, and PostgreSQL database hosted on Supabase. The app allows users to browse, search, and filter products with a clean, responsive UI. Integrated API endpoints serve real product data, and the site is fully deployed with a live backend and frontend for a seamless portfolio showcase.",
   },
 ];
