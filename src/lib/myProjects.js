@@ -33,7 +33,7 @@ export const myProjects = [
     name: "FullStack Social Media",
     tools: ["Node.js", "React", "TailwindCSS", "Supabase"],
     img: eldrimediaImg,
-    link: "https://fitwear-frontend.vercel.app/",
+    link: "https://eldri-media-social-media-web.vercel.app/",
     github: "https://github.com/eldrianayera/eldri-media-social-media-web",
     description:
       "A modern full-stack social media platform for creating and exploring user-generated communities and posts. Built with a React frontend integrated with Supabase for authentication, storage, and real-time data management. Features include image uploads, community selection, interactive posts with likes and comments, and a sleek responsive UI optimized for smooth user experience.",
