@@ -58,7 +58,6 @@ export const SkillsSection = () => {
                     style={{ width: `${skill.level}%` }}
                   ></div>
                 </div>
-                <p className="self-end">{skill.level}%</p>
               </div>
             );
           })}
