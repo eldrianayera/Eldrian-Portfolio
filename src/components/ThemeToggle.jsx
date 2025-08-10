@@ -1,10 +1,11 @@
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, ArrowUpRight } from "lucide-react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { cn } from "../lib/utils";
 
 export const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(true);
+  const [showHint, setIsShowHint] = useState(true);
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
@@ -15,6 +16,14 @@ export const ThemeToggle = () => {
       setIsDarkMode(false);
       document.documentElement.classList.remove("dark");
     }
+
+    const timer = setTimeout(() => {
+      setIsShowHint(false);
+    }, 5000);
+
+    return () => {
+      clearTimeout(timer);
+    };
   }, []);
 
   const toggleTheme = () => {
@@ -44,6 +53,20 @@ export const ThemeToggle = () => {
         <Sun className="h-6 w-6 text-yellow-300" />
       ) : (
         <Moon className="h-6 w-6 text-blue-900" />
+      )}
+
+      {/* Hint */}
+      {showHint && (
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="900"
+          className="absolute -translate-x-2/2 mt-2 max-sm:hidden animate-bounce transition-all duration-400"
+        >
+          <div className="bg-foreground text-background text-xs px-2 py-1 rounded shadow-lg flex">
+            <div>Try Me !</div>
+            <ArrowUpRight />
+          </div>
+        </div>
       )}
     </button>
   );
