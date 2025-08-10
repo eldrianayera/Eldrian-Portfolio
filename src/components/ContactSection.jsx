@@ -28,14 +28,12 @@ export const ContactSection = () => {
   };
 
   return (
-    <section className="min-h-screen py-24 px-8 relative" id="contact">
+    <section className="min-h-screen py-24 md:px-8 relative" id="contact">
       <div className="container mx-auto max-w-5xl">
-        {" "}
         <h2 data-aos="fade-up" className="section-header">
           Get in <span className="text-primary"> Touch</span>
         </h2>
         <div>
-          {" "}
           <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
             Have a project in mind or just want to say hello? I'm always open to
             new opportunities, collaborations, or a friendly chat. Let’s

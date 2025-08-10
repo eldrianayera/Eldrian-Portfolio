@@ -20,7 +20,7 @@ export const HeroSection = () => {
     >
       <div className="container max-w-6xl mx-auto text-left z-10 ">
         <div className="space-y-6 mb-8">
-          <div className="text-8xl font-bold anton tracking-wide">
+          <div className="max-sm:text-6xl text-8xl font-bold anton tracking-wide">
             <h1 className="opacity-0 animate-fade-in-delay-1 text-primary">
               ELDRIAN
             </h1>

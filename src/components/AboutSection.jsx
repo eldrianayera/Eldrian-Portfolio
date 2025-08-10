@@ -36,11 +36,11 @@ export const AboutSection = () => {
               data-aos-anchor-placement="top-bottom"
               className="flex flex-col md:flex-row justify-center gap-4 pt-4"
             >
-              <a className="cosmic-button" href="#contact">
+              <a className="cosmic-button rounded-lg" href="#contact">
                 Get in touch
               </a>
               <a
-                className="cosmic-button bg-foreground/70"
+                className="cosmic-button rounded-lg bg-foreground/70"
                 href="/cv.pdf"
                 download="Eldrian_Muljadi_CV.pdf"
               >

@@ -18,7 +18,7 @@ export const myProjects = [
     link: "https://saa-s-landing-page-eta.vercel.app/",
     github: "https://github.com/eldrianayera/SaaS-Landing-Page",
     description:
-      "A clean, modern SaaS landing page built with React and TailwindCSS. Designed for high conversion, it features responsive layouts, smooth animations, and a professional aesthetic to attract enterprise clients.",
+      "A modern landing page for SaaS products. It is fully responsive and works well on any device. Smooth animations make it look clean and professional.",
   },
   {
     name: "FitWear FullStack Catalogue",
@@ -27,7 +27,7 @@ export const myProjects = [
     link: "https://fitwear-frontend.vercel.app/",
     github: "https://github.com/eldrianayera/FitWear-Catalogue",
     description:
-      "A full-stack e-commerce catalogue for sports apparel with a React frontend, Express.js REST API backend, and PostgreSQL database on Supabase. Users can browse, search, and filter products with a responsive, performance‑optimized UI.",
+      "A full-stack sportswear catalogue where users can browse, search, and filter products. The frontend is built with React, and the backend uses Express.js with a PostgreSQL database. It is fast, responsive, and easy to use.",
   },
   {
     name: "FullStack Social Media",
@@ -36,7 +36,7 @@ export const myProjects = [
     link: "https://eldri-media-social-media-web.vercel.app/",
     github: "https://github.com/eldrianayera/eldri-media-social-media-web",
     description:
-      "A modern full-stack social media platform for creating and exploring user-generated communities and posts. Built with a React frontend integrated with Supabase for authentication, storage, and real-time data management. Features include image uploads, community selection, interactive posts with likes and comments, and a sleek responsive UI optimized for smooth user experience.",
+      "A social media platform where users can post, like, comment, and upload images. It uses Supabase for real-time updates and authentication. The design is clean and works well on all devices.",
   },
   {
     name: "Portfolio Page",
@@ -45,7 +45,7 @@ export const myProjects = [
     link: "https://eldrian-muljadi-portfolio.vercel.app/",
     github: "https://github.com/eldrianayera/Eldrian-Portfolio",
     description:
-      "A personal portfolio website showcasing projects, skills, and experience. Built with React and TailwindCSS for a responsive, modern, and professional presentation.",
+      "A personal portfolio to showcase my projects, skills, and experience. Built with React and TailwindCSS. Fully responsive and easy to navigate.",
   },
   {
     name: "Eldree Social Media",
@@ -54,7 +54,7 @@ export const myProjects = [
     link: "https://github.com/eldrianayera/Eldrian-Portfolio",
     github: "https://github.com/eldrianayera/Eldrian-Portfolio",
     description:
-      "A backend service for a social media platform, built with Node.js and Express.js. Provides core features like user authentication, content creation, and interaction endpoints for scalable deployment.",
+      "A backend service for a social media app. Handles user accounts, posts, and interactions. Built with Node.js and Express.js for scalability.",
   },
   {
     name: "Dating App Landing Page",
@@ -63,16 +63,16 @@ export const myProjects = [
     link: "https://github.com/eldrianayera/EldriMatch-Landing-Page",
     github: "https://github.com/eldrianayera/EldriMatch-Landing-Page",
     description:
-      "A visually appealing and mobile‑friendly landing page for a fictional dating app. Built with semantic HTML and modern CSS for a clean, engaging user experience.",
+      "A clean and mobile-friendly landing page for a dating app. Uses only HTML and CSS. Designed for simplicity and visual appeal.",
   },
   {
-    name: "Quote to tweet Generator",
+    name: "Quote to Tweet Generator",
     tools: ["Typescript", "React", "Tailwindcss"],
     img: quotegeneratorImg,
     link: "https://quote-generator-eldrian.netlify.app/",
     github: "https://github.com/eldrianayera",
     description:
-      "A simple and intuitive tool that lets users generate tweets from quotes instantly. Built with React and Typescript, styled with Tailwind CSS for a clean and responsive user interface.",
+      "Generates a tweet from a random quote instantly. Simple and fast to use. Built with React and TypeScript.",
   },
   {
     name: "Drum Machine",
@@ -81,7 +81,7 @@ export const myProjects = [
     link: "https://build-drum-machine.netlify.app/",
     github: "https://github.com/eldrianayera",
     description:
-      "An interactive drum machine app featuring multiple sound pads. Developed with React and Typescript, the app delivers smooth audio playback and a responsive design using Tailwind CSS.",
+      "An interactive app with multiple drum pads. Click or press keys to play sounds. Fully responsive for desktop and mobile.",
   },
   {
     name: "Markdown Editor & Previewer",
@@ -90,7 +90,7 @@ export const myProjects = [
     link: "https://68970f81e42fb40008264d83--build-a-markdown-preview.netlify.app/",
     github: "https://github.com/eldrianayera",
     description:
-      "A real-time Markdown editor with live preview functionality. Built using React and Typescript, with Tailwind CSS ensuring a user-friendly and responsive editing environment.",
+      "A live Markdown editor that shows instant preview. Easy to write and format text. Works smoothly on all devices.",
   },
   {
     name: "Podomoro Timer",
@@ -99,7 +99,7 @@ export const myProjects = [
     link: "https://podomoro-clock.netlify.app/",
     github: "https://github.com/eldrianayera",
     description:
-      "A sleek Pomodoro timer app designed to boost productivity with focus sessions. Created with React and Typescript, featuring smooth UI and styling powered by Tailwind CSS.",
+      "A Pomodoro timer to boost focus and productivity. Simple interface with clear timers. Built with React and TypeScript.",
   },
   {
     name: "Typescript Calculator",
@@ -108,6 +108,6 @@ export const myProjects = [
     link: "https://build-a-calculator.netlify.app/",
     github: "https://github.com/eldrianayera",
     description:
-      "A functional calculator app supporting basic arithmetic, built with React and Typescript. The modern interface is styled with Tailwind CSS for an intuitive user experience.",
+      "A calculator for basic arithmetic operations. Clean design and responsive layout. Made with React and TypeScript.",
   },
 ];
