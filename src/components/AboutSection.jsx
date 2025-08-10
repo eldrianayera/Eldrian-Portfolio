@@ -18,26 +18,19 @@ export const AboutSection = () => {
           <div className="flex flex-col items-center justify-center space-y-6">
             <h3
               data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
+              data-aos-anchor-placement="bottom-bottom"
               className="text-2xl font-semibold text-glow"
             >
               Passionate Web Developer
             </h3>
             <p data-aos="fade-up">
-              I'm a dedicated and creative web developer with a passion for
-              building modern, responsive, and user-friendly websites. Whether
-              it's crafting elegant UIs or optimizing backend functionality, I
-              love turning ideas into digital experiences that work beautifully
-              across all devices.
+              I'm a web developer who enjoys creating clean and easy-to-use
+              websites. I work with HTML, CSS, JavaScript, React, and
+              TailwindCSS to build responsive sites that look good on any
+              device. I like solving problems and learning new tools to make
+              better and faster websites.
             </p>
 
-            <p data-aos="fade-up">
-              With a strong foundation in HTML, CSS, JavaScript, React, and
-              TailwindCSS, I strive to deliver clean, efficient, and scalable
-              code in every project. I'm continuously learning and staying
-              up-to-date with the latest web technologies to bring innovative
-              solutions to life.
-            </p>
             <div
               data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"
@@ -47,7 +40,7 @@ export const AboutSection = () => {
                 Get in touch
               </a>
               <a
-                className="cosmic-button bg-pink-400/70"
+                className="cosmic-button bg-foreground/70"
                 href="/cv.pdf"
                 download="Eldrian_Muljadi_CV.pdf"
               >
@@ -84,6 +77,7 @@ export const AboutSection = () => {
             </div>
             <div
               data-aos="fade-up"
+              data-aos-anchor-placement="bottom-bottom"
               className="flex items-start bg-primary/20 rounded-xl  card-hover p-6"
             >
               <Handshake className="h-15 w-15 mr-5" />

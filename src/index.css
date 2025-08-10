@@ -2,13 +2,12 @@
 
 @theme {
   --color-border: hsl(var(--border));
-  --color-background: hsl(var(--background));
-  --color-foreground: hsl(var(--foreground));
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
 
-  --color-primary: hsl(var(--primary));
-  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-primary: var(--primary);
 
-  --color-card: hsl(var(--card));
+  --color-card: var(--card);
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
@@ -64,25 +63,23 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --background: rgb(228, 228, 228);
+    --foreground: rgb(27, 27, 27);
 
-    --card: 0 0% 100%;
+    --card: rgb(224, 224, 224);
 
-    --primary: 250 47% 60%;
-    --primary-foreground: 210 40% 98%;
+    --primary: rgb(157, 13, 214);
 
     --border: 214 32% 91%;
   }
 
   .dark {
-    --background: 222 47% 4%;
-    --foreground: 213 31% 91%;
+    --background: rgb(27, 27, 27);
+    --foreground: rgb(228, 228, 228);
 
-    --card: 222 47% 8%;
+    --card: rgb(14, 14, 14);
 
-    --primary: 250 65% 65%;
-    --primary-foreground: 213 31% 91%;
+    --primary: rgb(214, 13, 170);
 
     --border: 217 33% 20%;
   }
@@ -139,7 +136,7 @@
 }
 
 @utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
+  @apply anton tracking-wider text-xl px-3 py-4 bg-primary text-white font-medium 
          transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
          hover:scale-105 active:scale-95;
 }
@@ -152,6 +149,12 @@
 @utility meteor {
   @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
   box-shadow: 0 0 10px 5px rgba(255, 0, 255, 0.3);
+}
+
+@utility anton {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 #root {
