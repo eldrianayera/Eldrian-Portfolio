@@ -48,6 +48,7 @@ export const SkillsSection = () => {
           {filteredSkills.map((skill, key) => {
             return (
               <div
+                data-aos="zoom-in"
                 className="card-hover flex flex-col bg-foreground text-background gap-5 p-4 rounded-lg w-full max-w-100 mx-auto"
                 key={key}
               >

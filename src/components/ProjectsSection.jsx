@@ -27,6 +27,8 @@ export const ProjectsSection = () => {
           {myProjects.map((project, key) => {
             return (
               <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
                 key={key}
                 className="rounded-lg overflow-hidden mx-auto card-hover shadow-xs group bg-card h-full flex flex-col"
               >
