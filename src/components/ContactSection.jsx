@@ -134,7 +134,7 @@ export const ContactSection = () => {
                 <button
                   onClick={handleSending}
                   className={cn(
-                    "cosmic-button w-full flex justify-center gap-2"
+                    "cosmic-button bg-primary/60 rounded-lg w-full flex justify-center gap-2"
                   )}
                 >
                   {isSending ? "Sending..." : "Send Message"}

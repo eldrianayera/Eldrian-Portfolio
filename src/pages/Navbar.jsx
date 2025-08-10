@@ -38,15 +38,14 @@ export const NavBar = () => {
           href="#hero"
           className="text-xl font-bold text-primary flex items-center"
         >
-          <span className="relative z-10">
-            <span className="text-foreground text-glow">EldrianTech </span>{" "}
-            Portfolio
+          <span className="relative z-10 tracking-tighter">
+            <span className="text-foreground text-glow">Eldri</span>Tech
           </span>
         </a>
 
         {/* Desktop Navbar */}
 
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-8 text-xs">
           {NavItem.map((item, index) => (
             <a
               key={index}

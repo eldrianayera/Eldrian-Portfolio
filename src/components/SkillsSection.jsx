@@ -65,12 +65,12 @@ export const SkillsSection = () => {
                   <img src={skill.image} alt={skill.name} className="h-12" />
                   <h3 className="font-bold">{skill.name}</h3>
                 </div>
-                <div className="self-center bg-black h-2 w-full rounded-md">
+                {/* <div className="self-center bg-black h-2 w-full rounded-md">
                   <div
                     className="h-full bg-primary rounded-md"
                     style={{ width: `${skill.level}%` }}
                   ></div>
-                </div>
+                </div> */}
               </div>
             );
           })}

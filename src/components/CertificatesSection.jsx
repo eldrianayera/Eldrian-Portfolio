@@ -21,8 +21,7 @@ export const CertificatesSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               href={c.link}
-              data-aos="fade-up"
-              data-aos-offset="300"
+              data-aos="zoom-in"
               key={c.name}
               className="bg-card rounded-xl shadow-xl overflow-hidden transition-shadow duration-300 card-hover group"
             >
