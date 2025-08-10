@@ -48,10 +48,13 @@ export const SkillsSection = () => {
           {filteredSkills.map((skill, key) => {
             return (
               <div
-                className="card-hover flex flex-col bg-primary/30 gap-5 p-4 rounded-lg w-full max-w-100 mx-auto"
+                className="card-hover flex flex-col bg-foreground text-background gap-5 p-4 rounded-lg w-full max-w-100 mx-auto"
                 key={key}
               >
-                <h3 className="self-start font-bold">{skill.name}</h3>
+                <div className="flex items-center justify-evenly">
+                  <img src={skill.image} alt={skill.name} className="h-12" />
+                  <h3 className="font-bold">{skill.name}</h3>
+                </div>
                 <div className="self-center bg-black h-2 w-full rounded-md">
                   <div
                     className="h-full bg-primary rounded-md"

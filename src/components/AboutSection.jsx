@@ -1,17 +1,10 @@
-import {
-  Brain,
-  BrainCircuit,
-  BrainCog,
-  BrainIcon,
-  Briefcase,
-  Code,
-  Code2Icon,
-  Cpu,
-  Dribbble,
-  Handshake,
-} from "lucide-react";
+import { BrainCircuit, Code2Icon, Handshake } from "lucide-react";
+import { useRef } from "react";
 
 export const AboutSection = () => {
+  const sectionRef = useRef(null);
+  
+
   return (
     <section
       className="relative min-h-screen flex flex-col  py-24 px-4"

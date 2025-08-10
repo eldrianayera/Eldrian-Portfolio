@@ -1,14 +1,14 @@
-import saaswhiteImg from "@/lib/images/saaswhite.png";
-import eldrimatchImg from "@/lib/images/eldrimatch.png";
-import eldreeImg from "@/lib/images/eldree.png";
-import portfolioImg from "@/lib/images/portfolio.png";
-import fitwearImg from "@/lib/images/fitwear.png";
-import eldrimediaImg from "@/lib/images/eldrimedia.png";
-import podomoroImg from "@/lib/images/podomoro.png";
-import markdowneditorImg from "@/lib/images/markdowneditor.png";
-import calculatorImg from "@/lib/images/calculator.png";
-import drummachineImg from "@/lib/images/drummachine.png";
-import quotegeneratorImg from "@/lib/images/quotegenerator.png";
+import saaswhiteImg from "/portofolio-images/saaswhite.png";
+import eldrimatchImg from "/portofolio-images/eldrimatch.png";
+import eldreeImg from "/portofolio-images/eldree.png";
+import portfolioImg from "/portofolio-images/portfolio.png";
+import fitwearImg from "/portofolio-images/fitwear.png";
+import eldrimediaImg from "/portofolio-images/eldrimedia.png";
+import podomoroImg from "/portofolio-images/podomoro.png";
+import markdowneditorImg from "/portofolio-images/markdowneditor.png";
+import calculatorImg from "/portofolio-images/calculator.png";
+import drummachineImg from "/portofolio-images/drummachine.png";
+import quotegeneratorImg from "/portofolio-images/quotegenerator.png";
 
 export const myProjects = [
   {
