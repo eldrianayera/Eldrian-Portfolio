@@ -1,10 +1,4 @@
-import {
-  ArrowBigRightDash,
-  GitBranchIcon,
-  Github,
-  GithubIcon,
-  Share2,
-} from "lucide-react";
+import { ArrowBigRightDash, Github, Share2 } from "lucide-react";
 import { myProjects } from "../lib/myProjects";
 
 export const ProjectsSection = () => {
@@ -12,10 +6,10 @@ export const ProjectsSection = () => {
     <section className="min-h-screen py-24 px-4" id="projects">
       <div className="container mx-auto flex flex-col items-center">
         {" "}
-        <h2 className="text-3xl md:text-4xl font-bold mb-7 text-center">
+        <h2 data-aos="fade-up" className="section-header">
           Featured <span className="text-primary"> Projects</span>
         </h2>
-        <div className="max-w-2xl">
+        <div data-aos="fade-up" className="max-w-2xl">
           {" "}
           <p>
             A showcase of the websites and applications I've built — Each
@@ -28,7 +22,8 @@ export const ProjectsSection = () => {
             return (
               <div
                 data-aos="fade-up"
-                data-aos-duration="1000"
+                data-aos-offset="300"
+                data-aos-delay={(key % 3) * 150}
                 key={key}
                 className="rounded-lg overflow-hidden mx-auto card-hover shadow-xs group bg-card h-full flex flex-col"
               >

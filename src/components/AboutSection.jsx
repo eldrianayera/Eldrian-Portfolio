@@ -10,7 +10,7 @@ export const AboutSection = () => {
         <h2
           data-aos="fade-up"
           data-aos-anchor-placement="top-bottom"
-          className="text-3xl md:text-4xl font-bold mb-12 text-center"
+          className="section-header"
         >
           About <span className="text-primary">Me</span>
         </h2>

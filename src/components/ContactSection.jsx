@@ -31,7 +31,7 @@ export const ContactSection = () => {
     <section className="min-h-screen py-24 px-8 relative" id="contact">
       <div className="container mx-auto max-w-5xl">
         {" "}
-        <h2 className="text-3xl md:text-4xl font-bold mb-7 text-center">
+        <h2 data-aos="fade-up" className="section-header">
           Get in <span className="text-primary"> Touch</span>
         </h2>
         <div>

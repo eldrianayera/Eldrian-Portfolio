@@ -23,13 +23,17 @@ export const SkillsSection = () => {
       id="skills"
     >
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <h2 data-aos="fade-up" className="section-header">
           My <span className="text-primary">Skills</span>
         </h2>
-        <div className="justify-center hidden md:flex gap-3 mb-12">
+        <div
+          data-aos="fade-up"
+          className="justify-center hidden md:flex gap-3 mb-12"
+        >
           {categories.map((category, key) => {
             return (
               <button
+                data-aos="fade-up"
                 key={key}
                 onClick={() => handleCategory(category)}
                 className={cn(
@@ -44,11 +48,16 @@ export const SkillsSection = () => {
             );
           })}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+        <div
+          data-aos="fade-up"
+          className="grid grid-cols-1 md:grid-cols-3 gap-12"
+        >
           {filteredSkills.map((skill, key) => {
             return (
               <div
-                data-aos="zoom-in"
+                data-aos="fade-up"
+                data-aos-delay={(key % 3) * 150}
                 className="card-hover flex flex-col bg-foreground text-background gap-5 p-4 rounded-lg w-full max-w-100 mx-auto"
                 key={key}
               >

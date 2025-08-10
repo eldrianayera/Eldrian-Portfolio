@@ -157,6 +157,10 @@
   font-style: normal;
 }
 
+@utility section-header {
+  @apply text-3xl md:text-4xl font-bold mb-7 text-center;
+}
+
 #root {
   max-width: 100%;
   margin: 0 auto;

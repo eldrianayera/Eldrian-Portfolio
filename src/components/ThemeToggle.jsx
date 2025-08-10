@@ -36,8 +36,7 @@ export const ThemeToggle = () => {
         "fixed z-50 p-2 rounded-full transition-colors duration-300",
         "focus:outline-hidden",
         "max-sm:right-1",
-        "max-lg:right-1 max-lg:top-4.5",
-        "max-xl:right-5 max-xl:top-15",
+        "max-xl:right-5 max-xl:top-5",
         "xl:right-5 xl:top-4.5"
       )}
     >
