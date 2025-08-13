@@ -54,11 +54,15 @@ export const SkillsSection = () => {
           className="grid grid-cols-1 md:grid-cols-3 gap-12"
         >
           {filteredSkills.map((skill, key) => {
+            const delay = Math.floor(Math.random() * 4);
             return (
               <div
                 data-aos="fade-up"
-                data-aos-delay={(key % 3) * 150}
-                className="card-hover flex flex-col bg-foreground text-background gap-5 p-4 rounded-lg w-full max-w-100 mx-auto"
+                data-aos-delay={(key % 3) * 200}
+                className="animate-float card-hover flex flex-col bg-foreground text-background gap-5 p-4 rounded-lg w-full max-w-100 mx-auto"
+                style={{
+                  animationDelay: `${delay}s`,
+                }}
                 key={key}
               >
                 <div className="flex items-center justify-evenly">
