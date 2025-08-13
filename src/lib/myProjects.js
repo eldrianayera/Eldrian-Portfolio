@@ -9,16 +9,17 @@ import markdowneditorImg from "/portofolio-images/markdowneditor.png";
 import calculatorImg from "/portofolio-images/calculator.png";
 import drummachineImg from "/portofolio-images/drummachine.png";
 import quotegeneratorImg from "/portofolio-images/quotegenerator.png";
+import nutriplanImg from "/portofolio-images/nutriplan.png";
 
 export const myProjects = [
   {
-    name: "SaaS Landing Page",
-    tools: ["React", "Javascript", "TailwindCSS"],
-    img: saaswhiteImg,
-    link: "https://saa-s-landing-page-eta.vercel.app/",
-    github: "https://github.com/eldrianayera/SaaS-Landing-Page",
+    name: "Fullstack AI powered Meal Planner",
+    tools: ["Next.js", "Typescript", "Stripe", "PostgresSQL", "Clerk"],
+    img: nutriplanImg,
+    link: "https://nutri-plan-ai-meal-generator.vercel.app/",
+    github: "https://github.com/eldrianayera/NutriPlan---AI-meal-generator",
     description:
-      "A modern landing page for SaaS products. It is fully responsive and works well on any device. Smooth animations make it look clean and professional.",
+      "AI-powered meal planner with secure sign-in, seamless payments, and smart nutrition tracking — built full-stack for speed, scalability, and a personalized dining experience.",
   },
   {
     name: "FitWear FullStack Catalogue",
@@ -37,6 +38,15 @@ export const myProjects = [
     github: "https://github.com/eldrianayera/eldri-media-social-media-web",
     description:
       "A social media platform where users can post, like, comment, and upload images. It uses Supabase for real-time updates and authentication. The design is clean and works well on all devices.",
+  },
+  {
+    name: "SaaS Landing Page",
+    tools: ["React", "Javascript", "TailwindCSS"],
+    img: saaswhiteImg,
+    link: "https://saa-s-landing-page-eta.vercel.app/",
+    github: "https://github.com/eldrianayera/SaaS-Landing-Page",
+    description:
+      "A modern landing page for SaaS products. It is fully responsive and works well on any device. Smooth animations make it look clean and professional.",
   },
   {
     name: "Portfolio Page",
