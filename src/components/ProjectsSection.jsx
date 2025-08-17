@@ -91,7 +91,7 @@ export const ProjectsSection = () => {
         </div>
         <a
           href="https://github.com/eldrianayera"
-          className="flex gap-2 cosmic-button mt-10 animate-bounce"
+          className="flex gap-2 cosmic-button mt-10 animate-bounce rounded-xl"
         >
           Check My Github{" "}
           <span>

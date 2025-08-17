@@ -37,7 +37,7 @@ export const SkillsSection = () => {
                 key={key}
                 onClick={() => handleCategory(category)}
                 className={cn(
-                  "cosmic-button scale-80",
+                  "cosmic-button scale-80 rounded-lg py-1",
                   category === activeCategory
                     ? "scale-105"
                     : "bg-primary/20 hover:scale-70"
