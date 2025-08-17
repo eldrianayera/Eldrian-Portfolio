@@ -1,6 +1,5 @@
 import {
-  HandHelping,
-  Instagram,
+  Github,
   LocationEdit,
   Mail,
   MessageCircleMore,
@@ -15,6 +14,24 @@ export const ContactSection = () => {
   const [inputName, setInputName] = useState("");
   const [inputEmail, setInputEmail] = useState("");
   const [inputMessage, setInputMessage] = useState("");
+
+  const socialMedia = [
+    {
+      name: "email",
+      logo: <Mail />,
+      link: "mailto:eldrianayera710@gmail.com",
+    },
+    {
+      name: "line",
+      logo: <MessageCircleMore />,
+      link: "https://line.me/ti/p/JmWiT-ImW3",
+    },
+    {
+      name: "github",
+      logo: <Github />,
+      link: "https://github.com/eldrianayera",
+    },
+  ];
 
   return (
     <section className="min-h-screen py-24 md:px-8 relative" id="contact">
@@ -61,15 +78,16 @@ export const ContactSection = () => {
                   Connect With <span className="text-primary">Me</span>
                 </div>
                 <div className="flex justify-center gap-2">
-                  <a href="">
-                    <Instagram />
-                  </a>
-                  <a href="">
-                    <Mail />
-                  </a>
-                  <a href="">
-                    <MessageCircleMore />
-                  </a>
+                  {socialMedia.map((item, key) => (
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      key={item.name}
+                      href={item.link}
+                    >
+                      {item.logo}
+                    </a>
+                  ))}
                 </div>
               </div>
             </div>

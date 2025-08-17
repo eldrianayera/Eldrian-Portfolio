@@ -28,13 +28,18 @@ export const ProjectsSection = () => {
                 className="rounded-lg overflow-hidden mx-auto card-hover shadow-xs group bg-card h-full flex flex-col"
               >
                 {/* Image */}
-                <div className="h-48 overflow-hidden">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.link}
+                  className="h-48 overflow-hidden"
+                >
                   <img
                     src={project.img}
                     alt={project.name}
-                    className="w-full h-full object-cover transition-transform duration-500 scale-100 group-hover:scale-107 rounded-t-lg"
+                    className="w-full h-full object-contain transition-transform duration-500 scale-100 group-hover:scale-107 rounded-t-lg"
                   />
-                </div>
+                </a>
 
                 {/* Content */}
                 <div className="flex flex-col flex-grow p-6">
@@ -90,6 +95,8 @@ export const ProjectsSection = () => {
           })}
         </div>
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://github.com/eldrianayera"
           className="flex gap-2 cosmic-button mt-10 animate-bounce rounded-xl"
         >
