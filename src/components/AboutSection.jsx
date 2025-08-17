@@ -21,12 +21,12 @@ export const AboutSection = () => {
               data-aos-anchor-placement="bottom-bottom"
               className="text-2xl font-semibold text-glow"
             >
-              Passionate Web Developer
+              Passionate Junior Developer
             </h3>
             <p data-aos="fade-up">
-              I'm a web developer who enjoys creating clean and easy-to-use
-              websites. I work with HTML, CSS, JavaScript, React, and
-              TailwindCSS to build responsive sites that look good on any
+              I'm a junior web developer who enjoys creating clean and
+              easy-to-use websites. I work with HTML, CSS, JavaScript, React,
+              and TailwindCSS to build responsive sites that look good on any
               device. I like solving problems and learning new tools to make
               better and faster websites.
             </p>
@@ -82,10 +82,11 @@ export const AboutSection = () => {
             >
               <Handshake className="h-15 w-15 mr-5" />
               <div className="text-left">
-                <h4 className="text-xl ">Tools & Workflow</h4>
+                <h4 className="text-xl ">Modern Tools & Workflow</h4>
                 <p className="text-sm">
-                  Use Git, GitHub, VS Code, and Figma to stay efficient and
-                  organized.
+                  Learning and applying industry best practices to build
+                  reliable, responsive, and maintainable applications while
+                  growing as a developer.
                 </p>
               </div>
             </div>

@@ -10,11 +10,18 @@ import calculatorImg from "/portofolio-images/calculator.png";
 import drummachineImg from "/portofolio-images/drummachine.png";
 import quotegeneratorImg from "/portofolio-images/quotegenerator.png";
 import nutriplanImg from "/portofolio-images/nutriplan.png";
+import studyflowImg from "/portofolio-images/studyflow.png";
 
 export const myProjects = [
   {
     name: "Fullstack AI powered Meal Planner",
-    tools: ["Next.js", "Typescript", "Stripe", "PostgresSQL", "Clerk"],
+    tools: [
+      "Next.js",
+      "Typescript",
+      "Payment System",
+      "PostgresSQL",
+      "Authentication",
+    ],
     img: nutriplanImg,
     link: "https://nutri-plan-ai-meal-generator.vercel.app/",
     github: "https://github.com/eldrianayera/NutriPlan---AI-meal-generator",
@@ -29,6 +36,22 @@ export const myProjects = [
     github: "https://github.com/eldrianayera/FitWear-Catalogue",
     description:
       "A full-stack sportswear catalogue where users can browse, search, and filter products. The frontend is built with React, and the backend uses Express.js with a PostgreSQL database. It is fast, responsive, and easy to use.",
+  },
+  {
+    name: "Fullstack AI Learning Web App",
+    tools: [
+      "Next.js",
+      "Typescript",
+      "TailwindCSS",
+      "PostgresSQL",
+      "Authentication",
+    ],
+    img: studyflowImg,
+    link: "https://study-flow-learning-path-generator.vercel.app/",
+    github:
+      "https://github.com/eldrianayera/StudyFlow---Learning-Path-Generator",
+    description:
+      "An AI-powered fullstack learning platform that generates personalized learning paths. Built with Next.js, TypeScript, and PostgreSQL, it features authentication, responsive UI, and smooth animations for a modern user experience.",
   },
   {
     name: "FullStack Social Media",

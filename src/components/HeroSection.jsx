@@ -28,9 +28,9 @@ export const HeroSection = () => {
           </div>
 
           <p className="opacity-0 animate-fade-in-delay-3 text-foreground text-lg md:text-xl max-2-2xl max-w-xl">
-            Hi ! I am Eldrian Muljadi. A passionate web developer focused on
-            building clean, responsive, and user-friendly websites using modern
-            tools.
+            Hi ! I am Eldrian Muljadi. A passionate junior web developer focused
+            on building clean, responsive, and user-friendly websites using
+            modern tools.
           </p>
         </div>
 

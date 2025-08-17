@@ -16,17 +16,6 @@ export const ContactSection = () => {
   const [inputEmail, setInputEmail] = useState("");
   const [inputMessage, setInputMessage] = useState("");
 
-  const handleSending = () => {
-    setIsSending(true);
-
-    setTimeout(() => {
-      setIsSending(false);
-      setInputEmail("");
-      setInputMessage("");
-      setInputName("");
-    }, 1500);
-  };
-
   return (
     <section className="min-h-screen py-24 md:px-8 relative" id="contact">
       <div className="container mx-auto max-w-5xl">
@@ -87,7 +76,11 @@ export const ContactSection = () => {
             <div className="flex flex-col items-center gap-4 border-2 p-9 rounded-2xl bg-card">
               <div className="flex flex-col items-center w-full ">
                 <h3 className="text-xl font-bold mb-5">Send a Message</h3>
-                <form action="" className="w-full mb-5">
+                <form
+                  action="https://formspree.io/f/mzzvqrqz"
+                  method="POST"
+                  className="w-full mb-5"
+                >
                   <div className="flex flex-col items-center gap-2 w-full mb-5">
                     <p>Your Name</p>
                     <input
@@ -130,16 +123,16 @@ export const ContactSection = () => {
                       }}
                     />
                   </div>
+                  <button
+                    type="submit"
+                    className={cn(
+                      "cosmic-button bg-primary/60 rounded-lg w-full flex justify-center gap-2"
+                    )}
+                  >
+                    {isSending ? "Sending..." : "Send Message"}
+                    <Send />
+                  </button>
                 </form>
-                <button
-                  onClick={handleSending}
-                  className={cn(
-                    "cosmic-button bg-primary/60 rounded-lg w-full flex justify-center gap-2"
-                  )}
-                >
-                  {isSending ? "Sending..." : "Send Message"}
-                  <Send />
-                </button>
               </div>
             </div>
           </div>
