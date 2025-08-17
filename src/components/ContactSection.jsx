@@ -19,7 +19,7 @@ export const ContactSection = () => {
     {
       name: "email",
       logo: <Mail />,
-      link: "mailto:eldrianayera710@gmail.com",
+      link: "https://mail.google.com/mail/?view=cm&fs=1&to=eldrianayera710@gmail.com",
     },
     {
       name: "line",
@@ -73,11 +73,11 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2 mt-2">
+              <div className="flex flex-col gap-5 mt-2">
                 <div>
                   Connect With <span className="text-primary">Me</span>
                 </div>
-                <div className="flex justify-center gap-2">
+                <div className="flex justify-center gap-7">
                   {socialMedia.map((item, key) => (
                     <a
                       target="_blank"
