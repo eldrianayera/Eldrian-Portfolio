@@ -33,6 +33,8 @@ export const ContactSection = () => {
     },
   ];
 
+  const currentYear = new Date().getFullYear();
+
   return (
     <section className="min-h-screen py-24 md:px-8 relative" id="contact">
       <div className="container mx-auto max-w-5xl">
@@ -156,6 +158,14 @@ export const ContactSection = () => {
           </div>
         </div>
       </div>
+
+      <footer className="absolute bottom-0 left-0 w-full py-6 border-t text-center bg-background ">
+        <div className="container mx-auto px-4">
+          <p className="text-sm text-gray-600 dark:text-gray-400">
+            © {currentYear} Eldrian Muljadi. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </section>
   );
 };
