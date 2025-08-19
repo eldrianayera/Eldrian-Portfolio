@@ -47,7 +47,7 @@ export const myProjects = [
       "Authentication",
     ],
     img: studyflowImg,
-    link: "https://study-flow-learning-path-generator.vercel.app/",
+    link: "https://studyflow-learning-path-generator.vercel.app/",
     github:
       "https://github.com/eldrianayera/StudyFlow---Learning-Path-Generator",
     description:
