@@ -22,7 +22,6 @@ export const ProjectsSection = () => {
             return (
               <div
                 data-aos="fade-up"
-                data-aos-offset="300"
                 data-aos-delay={(key % 3) * 150}
                 key={key}
                 className="rounded-lg overflow-hidden mx-auto card-hover shadow-xs group bg-card h-full flex flex-col"
