@@ -18,15 +18,15 @@ export const HeroSection = () => {
       className="relative min-h-screen flex flex-col justify-center items-center px-4"
       id="hero"
     >
-      <div className="container max-w-6xl mx-auto text-left z-10 ">
-        <div className="space-y-6 mb-8">
-          <div className="max-sm:text-6xl text-8xl font-bold anton tracking-wide">
+      <div className="container max-w-5xl mx-auto text-left z-10 ">
+        <div className="mb-8">
+          <div className="max-sm:text-6xl text-8xl font-bold anton tracking-wide mb-5">
             <h1 className="opacity-0 animate-fade-in-delay-1 text-primary">
               ELDRIAN
             </h1>
             <h1 className="opacity-0 animate-fade-in-delay-2 pl-15">MULJADI</h1>
           </div>
-
+          <h2 className="text-lg anton text-gray-500">FULL-STACK WEB DEVELOPER</h2>
           <p className="opacity-0 animate-fade-in-delay-3 text-foreground text-lg md:text-xl max-2-2xl max-w-xl">
             Hi ! I am Eldrian Muljadi. A passionate junior web developer focused
             on building clean, responsive, and user-friendly websites using
