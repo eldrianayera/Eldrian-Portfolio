@@ -32,7 +32,7 @@ export const myProjects = [
     name: "FitWear FullStack Catalogue",
     tools: ["Node.js", "Express.js", "React", "PostgresSQL", "Supabase"],
     img: fitwearImg,
-    link: "https://fitwear-frontend.vercel.app/",
+    link: "https://fitwear-tawny.vercel.app/",
     github: "https://github.com/eldrianayera/FitWear-Catalogue",
     description:
       "A full-stack sportswear catalogue where users can browse, search, and filter products. The frontend is built with React, and the backend uses Express.js with a PostgreSQL database. It is fast, responsive, and easy to use.",
