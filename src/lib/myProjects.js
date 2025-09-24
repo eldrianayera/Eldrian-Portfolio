@@ -30,7 +30,7 @@ export const myProjects = [
   },
   {
     name: "FitWear FullStack Catalogue",
-    tools: ["Node.js", "Express.js", "React", "PostgresSQL", "Supabase"],
+    tools: ["Typescript","Node.js", "Express.js", "React", "PostgresSQL", "Supabase"],
     img: fitwearImg,
     link: "https://fitwear-tawny.vercel.app/",
     github: "https://github.com/eldrianayera/FitWear-Catalogue",
