@@ -11,22 +11,25 @@ import drummachineImg from "/portofolio-images/drummachine.png";
 import quotegeneratorImg from "/portofolio-images/quotegenerator.png";
 import nutriplanImg from "/portofolio-images/nutriplan.png";
 import studyflowImg from "/portofolio-images/studyflow.png";
+import spendwiseImg from "/portofolio-images/spendwise.png";
 
 export const myProjects = [
+  
   {
-    name: "Fullstack AI powered Meal Planner",
+    name: "Personal Finance Tracker",
     tools: [
-      "Next.js",
+      "React",
       "Typescript",
-      "Payment System",
-      "PostgresSQL",
+      "MongoDB",
       "Authentication",
+      "Express",
+      "Node.js",
     ],
-    img: nutriplanImg,
-    link: "https://nutri-plan-ai-meal-generator.vercel.app/",
-    github: "https://github.com/eldrianayera/NutriPlan---AI-meal-generator",
+    img: spendwiseImg,
+    link: "https://spendwise-silk.vercel.app/",
+    github: "https://github.com/eldrianayera/SpendWise---Server",
     description:
-      "AI-powered meal planner with secure sign-in, seamless payments, and smart nutrition tracking — built full-stack for speed, scalability, and a personalized dining experience.",
+      "SpendWise is a simple web application designed to help individuals take control of their finances effortlessly. Built with the MERN stack (MongoDB, Express, React, Node.js), SpendWise allows users to track, manage, and analyze their income and expenses in a user-friendly interface.",
   },
   {
     name: "FitWear FullStack Catalogue",
@@ -52,6 +55,21 @@ export const myProjects = [
       "https://github.com/eldrianayera/StudyFlow---Learning-Path-Generator",
     description:
       "An AI-powered fullstack learning platform that generates personalized learning paths. Built with Next.js, TypeScript, and PostgreSQL, it features authentication, responsive UI, and smooth animations for a modern user experience.",
+  },
+  {
+    name: "Fullstack AI powered Meal Planner",
+    tools: [
+      "Next.js",
+      "Typescript",
+      "Payment System",
+      "PostgresSQL",
+      "Authentication",
+    ],
+    img: nutriplanImg,
+    link: "https://nutri-plan-ai-meal-generator.vercel.app/",
+    github: "https://github.com/eldrianayera/NutriPlan---AI-meal-generator",
+    description:
+      "AI-powered meal planner with secure sign-in, seamless payments, and smart nutrition tracking — built full-stack for speed, scalability, and a personalized dining experience.",
   },
   {
     name: "FullStack Social Media",
